@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cool skills</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
+    <a href="/">Orange-in</a>
     <h1>My Skills</h1>
     <ul>
       <% skills.forEach(function(s) { %>
         <li>
-          <%= s.skill %>
+         <a href="/skills/<%= s.id %>"><%= s.skill %></a> 
             - 
           <%= s.yay ? 'yay' : 'not fun' %>
         </li>
